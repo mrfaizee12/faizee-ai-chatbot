@@ -116,10 +116,6 @@ col1, col2 = st.columns([4, 1])
 with col1:
     st.text_input("💬 Type your message:", key="user_message", on_change=handle_input)
 
-# Send Button
-with col2:
-    if st.button("📩 Send", key="send_btn"):
-        handle_input()
 
 # Clear Chat Button
 if st.button("🔄 Clear Chat"):
